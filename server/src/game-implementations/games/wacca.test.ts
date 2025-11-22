@@ -87,6 +87,7 @@ t.test("WACCA Implementation", (t) => {
 		f(null, null);
 		f(0, "ASH");
 
+		f(2700, "ULTIMATE");
 		f(2500, "RAINBOW");
 		f(2200, "GOLD");
 		f(1900, "SILVER");

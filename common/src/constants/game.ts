@@ -412,6 +412,7 @@ export enum WACCA_COLOURS {
 	SILVER = 6,
 	GOLD = 7,
 	RAINBOW = 8,
+	ULTIMATE = 9,
 }
 
 export enum POPN_CLASSES {
