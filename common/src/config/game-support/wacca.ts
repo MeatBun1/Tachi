@@ -41,6 +41,7 @@ export const WaccaColours = [
 	ClassValue("SILVER", "Silver"),
 	ClassValue("GOLD", "Gold"),
 	ClassValue("RAINBOW", "Rainbow"),
+	ClassValue("ULTIMATE", "Ultimate"),
 ];
 
 export const WACCA_SINGLE_CONF = {

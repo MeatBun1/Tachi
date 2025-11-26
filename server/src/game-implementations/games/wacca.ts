@@ -27,7 +27,9 @@ export const WACCA_IMPL: GPTServerImplementation<"wacca:Single"> = {
 				return null;
 			}
 
-			if (rate >= 2500) {
+			if (rate >= 2700) {
+				return "ULTIMATE";
+			} else if (rate >= 2500) {
 				return "RAINBOW";
 			} else if (rate >= 2200) {
 				return "GOLD";

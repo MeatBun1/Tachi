@@ -284,12 +284,7 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				BRONZE: bgc("brown", "var(--bs-light)"),
 				SILVER: bgc("gray", "var(--bs-light)"),
 				GOLD: bgc("var(--bs-warning)", "var(--bs-dark)"),
-
-				RAINBOW: {
-					background:
-						"linear-gradient(-45deg, #f0788a, #f48fb1, #9174c2, #79bcf2, #70a173, #f7ff99, #faca7d, #ff9d80, #f0788a)",
-					color: "var(--bs-dark)",
-				},
+				RAINBOW: RAINBOW_GRADIENT,
 			},
 		},
 		difficultyColours: {
@@ -374,11 +369,7 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 
 				SHINKAIDEN: bgc("purple", "var(--bs-light)"),
 
-				URAKAIDEN: {
-					background:
-						"linear-gradient(-45deg, #f0788a, #f48fb1, #9174c2, #79bcf2, #70a173, #f7ff99, #faca7d, #ff9d80, #f0788a)",
-					color: "var(--bs-dark)",
-				},
+				URAKAIDEN: RAINBOW_GRADIENT,
 			},
 			colour: {
 				WHITE: bgc("white", "var(--bs-dark)"),
@@ -391,12 +382,7 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				SILVER: bgc("gray", "var(--bs-light)"),
 				GOLD: bgc("var(--bs-warning)", "var(--bs-dark)"),
 				PLATINUM: bgc("lightgoldenrodyellow", "var(--bs-dark)"),
-
-				RAINBOW: {
-					background:
-						"linear-gradient(-45deg, #f0788a, #f48fb1, #9174c2, #79bcf2, #70a173, #f7ff99, #faca7d, #ff9d80, #f0788a)",
-					color: "var(--bs-dark)",
-				},
+				RAINBOW: RAINBOW_GRADIENT,
 			},
 			matchingClass: {
 				B5: bgc("green", "var(--bs-light)"),
@@ -424,11 +410,7 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				SSS3: bgc("var(--bs-warning)", "var(--bs-dark)"),
 				SSS2: bgc("var(--bs-warning)", "var(--bs-dark)"),
 				SSS1: bgc("var(--bs-warning)", "var(--bs-dark)"),
-				LEGEND: {
-					background:
-						"linear-gradient(-45deg, #f0788a, #f48fb1, #9174c2, #79bcf2, #70a173, #f7ff99, #faca7d, #ff9d80, #f0788a)",
-					color: "var(--bs-dark)",
-				},
+				LEGEND: RAINBOW_GRADIENT,
 			},
 		},
 		difficultyColours: {
@@ -635,11 +617,8 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 				BLUE: bgc("var(--bs-info)", "var(--bs-light)"),
 				SILVER: bgc("silver", "var(--bs-dark)"),
 				GOLD: bgc("var(--bs-warning)", "var(--bs-dark)"),
-				RAINBOW: {
-					background:
-						"linear-gradient(-45deg, #f0788a, #f48fb1, #9174c2, #79bcf2, #70a173, #f7ff99, #faca7d, #ff9d80, #f0788a)",
-					color: "var(--bs-dark)",
-				},
+				RAINBOW: RAINBOW_GRADIENT,
+				ULTIMATE: RAINBOW_EX_GRADIENT,
 			},
 			stageUp: {
 				I: bgc("var(--bs-dark)", "var(--bs-light)"),
