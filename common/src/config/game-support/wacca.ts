@@ -92,17 +92,33 @@ export const WACCA_SINGLE_CONF = {
 
 	scoreRatingAlgs: {
 		rate: {
-			description: "Rating as it's implemented in game.",
+			description: "Rating as it's implemented in Reverse.",
+		},
+		plusRate: {
+			description: "Rating as it's implemented in Plus.",
 		},
 	},
 	profileRatingAlgs: {
 		naiveRate: {
-			description: "A naive rating algorithm that just sums your 50 best scores.",
-			associatedScoreAlgs: ["rate"],
+			description:
+				"A naive rating algorithm that just sums your 50 best scores using Reverse calculations.",
+			associatedScoreAlgs: ["plusRate"],
+		},
+		naiveRatePlus: {
+			description:
+				"A naive rating algorithm that just sums your 50 best scores using Plus calculations.",
+			associatedScoreAlgs: ["plusRate"],
 		},
 	},
 	sessionRatingAlgs: {
-		rate: { description: "The average of your best 10 ratings this session." },
+		rate: {
+			description:
+				"The average of your best 10 ratings this session using Reverse calculations.",
+		},
+		plusRate: {
+			description:
+				"The average of your best 10 ratings this session using Plus calculations.",
+		},
 	},
 
 	defaultScoreRatingAlg: "rate",

@@ -14,14 +14,17 @@ export const WACCA_IMPL: GPTServerImplementation<"wacca:Single"> = {
 	},
 	scoreCalcs: {
 		rate: (scoreData, chart) => WACCARate.calculate(scoreData.score, chart.levelNum),
+		plusRate: (scoreData, chart) =>
+			WACCARate.calculatePlus(scoreData.score, chart.levelNumPlus),
 	},
-	sessionCalcs: { rate: SessionAvgBest10For("rate") },
+	sessionCalcs: { rate: SessionAvgBest10For("rate"), plusRate: SessionAvgBest10For("plusRate") },
 	profileCalcs: {
 		naiveRate: ProfileSumBestN("rate", 50),
+		naiveRatePlus: ProfileSumBestN("plusRate", 50),
 	},
 	classDerivers: {
 		colour: (ratings) => {
-			const rate = ratings.naiveRate;
+			const rate = ratings.naiveRatePlus;
 
 			if (IsNullish(rate)) {
 				return null;

@@ -644,6 +644,17 @@ export const GPT_CLIENT_IMPLEMENTATIONS: GPTClientImplementations = {
 			INFERNO: COLOUR_SET.purple,
 		},
 		ratingSystems: [],
+		ratingAlgNameOverrides: {
+			score: {
+				rating: "ReverseRating",
+			},
+			session: {
+				naiveRating: "NaiveReverseRating",
+			},
+			profile: {
+				naiveRating: "NaiveRatingReverse",
+			},
+		},
 		scoreHeaders: [
 			["Score", "Score", NumericSOV((x) => x.scoreData.score)],
 			["Judgements", "Hits", NumericSOV((x) => x.scoreData.score)],
